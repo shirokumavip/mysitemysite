@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    <script>
+      $(function() {
+        $(".oc").hover(
+          function() {
+            //$(a img).hover(function(){ ←すべてのリンク付き画像に適応
+            $(this).fadeTo("normal", 0.6); // マウスオーバーで透明度を60%にする
+          },
+          function() {
+            $(this).fadeTo("normal", 1.0); // マウスアウトで透明度を100%に戻す
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <a href="#" class="oc"><img src="images/button.png" alt="ボタン"/></a>
+  </body>
+</html>
+折りたたむ
+
+
+
+
+ジャンプ
+既読にする (esc)
+メッセージ入力

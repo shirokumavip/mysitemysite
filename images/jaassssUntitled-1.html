@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    <script>
+      $(function() {
+        $("a img").hover(
+          function() {
+            $(this).attr(
+              "src",
+              $(this)
+                .attr("src")
+                .replace("_off", "_on")
+            );
+          },
+          function() {
+            if (!$(this).hasClass("currentPage")) {
+              $(this).attr(
+                "src",
+                $(this)
+                  .attr("src")
+                  .replace("_on", "_off")
+              );
+            }
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <a href="http://happymondays.pecori.jp/jquery-sample/#"><img src="http://happymondays.pecori.jp/jquery-sample/images/button_on.png" alt="ボタン"/></a>
+  </body>
+</html>
